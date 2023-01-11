@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_black_grey">
+
+    <TextView
+        android:id="@+id/dateChosen"
+        android:layout_width="289dp"
+        android:layout_height="51dp"
+
+
+        android:layout_marginTop="92dp"
+        android:width="270dp"
+        android:height="34dp"
+        android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.3"
+        android:text="October 23rd 2022"
+        android:textColor="#FFFFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/arrowForward"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/arrowForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_baseline_arrow_forward_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Hour"
+        android:layout_width="114dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="111dp"
+        android:drawableLeft="@drawable/clock_white"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.3"
+        android:text="21:00"
+        android:textColor="#FFFFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateChosen" />
+
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="322dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:width="364dp"
+        android:height="38dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.29"
+        android:text="Number Of people"
+        android:textColor="#FFFFFFFF"
+        android:textSize="27.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hour" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout3"
+        android:layout_width="414dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+
+            >
+
+
+            <Button
+                android:id="@+id/button1NP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/number_of_people_button"
+                android:lineSpacingMultiplier="1.3"
+                android:paddingRight="16dp"
+                android:text="1"
+                android:textColor="#5A6978"
+                android:textSize="35sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button2NP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/number_of_people_button"
+                android:lineSpacingMultiplier="1.3"
+                android:text="2"
+                android:textColor="#5A6978"
+                android:textSize="35sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button3NP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/number_of_people_button"
+                android:lineSpacingMultiplier="1.3"
+                android:text="3"
+                android:textColor="#5A6978"
+                android:textSize="35sp"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp">
+
+
+            <Button
+                android:id="@+id/button4NP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/number_of_people_button"
+                android:lineSpacingMultiplier="1.3"
+                android:text="4"
+                android:textColor="#5A6978"
+                android:textSize="35sp"
+                app:backgroundTint="@null"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button5NP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/number_of_people_button"
+                android:lineSpacingMultiplier="1.3"
+                android:text="5"
+                android:textColor="#5A6978"
+                android:textSize="35sp"
+                app:backgroundTint="@null"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button6NP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/number_of_people_button"
+                android:lineSpacingMultiplier="1.3"
+                android:text="6"
+                android:textColor="#5A6978"
+                android:textSize="35sp"
+                app:backgroundTint="@null"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/button7NP"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_of_people_button"
+                android:lineSpacingMultiplier="1.3"
+                android:text="7"
+                android:textColor="#5A6978"
+                android:textSize="35sp"
+                app:backgroundTint="@null"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/moreThan8"
+        android:layout_width="105dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/number_of_people_button"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/arrowForward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="59dp"
+        android:text="More than 8?\nHow many?"
+        android:textColor="#FFFFFFFF"
+        android:textSize="27.5sp"
+        app:layout_constraintBottom_toBottomOf="@+id/arrowBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.645" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

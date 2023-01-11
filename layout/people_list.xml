@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/btn_person"
+        app:backgroundTint="@null"
+        android:layout_width="363dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_choose_menu"
+        android:gravity="fill_vertical"
+        android:drawableRight="@drawable/ic_baseline_edit_24"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Person 1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        />
+</LinearLayout>

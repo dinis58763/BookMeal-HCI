@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/main_black_grey"
+    android:background="@color/main_black_grey"
+    android:orientation="vertical"
+    android:id="@+id/my_reviews"
+    android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_baseline_rate_review_24"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_reviews"
+                android:textColor="@color/white"
+                android:textSize="@dimen/titles"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:textSize="25sp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btn_add_review_my_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="60dp"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_white"
+            android:text="ADD REVIEW"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            />
+</LinearLayout>

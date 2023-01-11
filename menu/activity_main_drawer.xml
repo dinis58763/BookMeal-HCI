@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Discover the Best Restaurants">
+        <menu>
+            <item
+                android:id="@+id/nav_main_menu"
+                android:icon="@drawable/ic_baseline_restaurant_menu_24"
+                android:title="Main Menu" />
+        </menu>
+    </item>
+
+    <item android:title="Personal">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_my_profile"
+                    android:icon="@drawable/ic_profile_picture"
+                    android:title="My Profile" />
+                <item
+                    android:id="@+id/nav_my_bookings"
+                    android:icon="@drawable/ic_baseline_bookmarks_black_24"
+                    android:title="My Bookings" />
+                <item
+                    android:id="@+id/nav_my_favourites"
+                    android:icon="@drawable/ic_baseline_favourite_white_24"
+                    android:title="My Favourites" />
+                <item
+                    android:id="@+id/nav_my_reviews"
+                    android:icon="@drawable/ic_baseline_rate_review_24"
+                    android:title="My Reviews" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="System">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_baseline_settings_white_24"
+                    android:title="Settings" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_baseline_topic_about_us_24"
+                    android:title="About" />
+                <item
+                    android:id="@+id/nav_terms_of_service"
+                    android:icon="@drawable/ic_baseline_design_terms_of_service_24"
+                    android:title="Terms of Service" />
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:icon="@drawable/ic_baseline_star_rate_us_white_24"
+                    android:title="Rate Us" />
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--fragment to display our maps-->
+
+    <!--search view to search our location-->
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"
+        />
+
+    <Button
+        android:id="@+id/btn_go_back_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24_main"
+        android:text="BACK"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:textColor="@color/main_black_grey" />
+
+    <TextView
+        android:id="@+id/lisbon"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:layout_marginLeft="150dp"
+        android:background="@android:color/transparent"
+        android:text="Lisbon, Portugal"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/restaurant_main"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        app:backgroundTint="@null">
+
+        <TextView
+            android:id="@+id/restaurant_maps_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurante O Nobre"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/restaurant_maps_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campo Pequeno"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/restaurant_maps_avg_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average Price 25£"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/more_text1"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:text="9.1"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <!-- MAX 290dp in width, then we adjust by Review average -->
+        <!-- 10 -> 291; 9.1 -> x <=> x = 264.81 = 265 -->
+        <TextView
+            android:layout_height="2dp"
+            android:layout_marginTop="103dp"
+            android:layout_width="265dp"
+            android:background="@color/green"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

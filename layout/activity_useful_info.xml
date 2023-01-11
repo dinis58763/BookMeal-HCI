@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:background="@color/main">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text=" BACK"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/main"
+                    android:color="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:id="@+id/tv_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Restaurante O Nobre"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textAlignment="center"
+                    android:text="Avenida Sacadura Cabral 53B, 1000-080\nLisboa - Portugal"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/reviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9.1"
+                    android:textSize="55dp"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/raleway"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_height="2dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:textSize="25sp"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:background="@color/main_black_grey">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_black_grey">
+
+                        <TextView
+                            android:id="@+id/fav2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_toRightOf="@id/back"
+                            android:textAlignment="center"
+                            android:color="@color/white"
+                            android:text="USEFUL INFORMATION"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/fav23333"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/back"
+                            android:layout_marginLeft="10dp"
+                            android:color="@color/black"
+                            android:text="OPENING HOURS"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/main"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:id="@+id/d2222"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Monday 12:00 - 14:30, 18:30 - 22:30"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/d23222"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Tuesday 12:00 - 14:30, 18:30 - 22:30"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/d24222"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Wednesday 12:00 - 14:30, 18:30 - 22:30"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/d22522"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Thursday 12:00 - 14:30, 18:30 - 22:30"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/d26222"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Friday 12:00 - 14:30, 18:30 - 22:30"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/d22227"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Saturday 11:30 - 15:30, 18:30 - 00:30"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/d22282"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Sunday 11:30 - 15:30, 18:30 - 00:30"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/fav3323333"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/back"
+                            android:layout_marginLeft="10dp"
+                            android:color="@color/black"
+                            android:text="CHEF NAME"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/main"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:id="@+id/d332222"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Hieu PHAM"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/fav33233"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/back"
+                            android:layout_marginLeft="10dp"
+                            android:color="@color/black"
+                            android:text="ACCEPTED CREDIT CARDS"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/main"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:id="@+id/d3322"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Credit Card \nMasterCard \nVisa \nVisa Electron"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="30dp"/>
+
+                        <Button
+                            android:id="@+id/btn_photos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:drawableRight="@drawable/ic_arrow_forward_black"
+                            android:text="OPEN MAPS"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="20dp"
+                            android:textColor="@color/main"
+                            android:background="@drawable/btn_custom_white"
+                            />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_black_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:background="@color/main_black_grey">
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Notifications"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginBottom="2dp"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                tools:layout_editor_absoluteX="316dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Preferences"
+            android:textSize="20dp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:background="@color/main_black_grey">
+
+            <TextView
+                android:id="@+id/notification_special"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Receive special offers notifications"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginBottom="2dp"/>
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                tools:layout_editor_absoluteX="316dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:background="@color/main_black_grey">
+
+            <TextView
+                android:id="@+id/notification_receive"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Receive SMS notifications"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginBottom="2dp"/>
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                tools:layout_editor_absoluteX="316dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Location"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/loc2211"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Preferences"
+            android:textSize="20dp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:background="@color/main_black_grey">
+
+            <TextView
+                android:id="@+id/location_places"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Personalise based on restaurants you've been"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginBottom="2dp"/>
+
+            <Switch
+                android:id="@+id/switch_location_places"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                tools:layout_editor_absoluteX="316dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loc221"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Location permission for BookMeal is disabled.
+            \nEnable it by turning on the location of your phone."
+            android:textSize="15dp"
+            android:textColor="@color/main"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/loc2213"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Your location services are not currently enabled.
+            \nEnable them in your devices settings."
+            android:textSize="15dp"
+            android:textColor="@color/main"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Security"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Account's security"
+            android:textSize="20dp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:background="@color/main_black_grey">
+
+            <TextView
+                android:id="@+id/two_factor"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Two-factor authentication"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginBottom="2dp"/>
+
+            <Switch
+                android:id="@+id/switch_two_factor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                tools:layout_editor_absoluteX="316dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Help protect your account from unauthorised access by
+            requiring a second authentication method."
+            android:textSize="15dp"
+            android:textColor="@color/main"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:background="@color/main_black_grey">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Additional password protection"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginBottom="2dp"/>
+
+            <Switch
+                android:id="@+id/switch_pwd_protection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                tools:layout_editor_absoluteX="316dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Enabling this setting adds extra security to you account by
+            \nrequiring additional information to reset your password."
+            android:textSize="15dp"
+            android:textColor="@color/main"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

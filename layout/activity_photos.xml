@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    android:background="@color/main_black_grey"
+    tools:context=".PhotoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/back_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:text=" BACK"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/main_black_grey"
+                android:color="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+            <ImageView
+                android:id="@+id/imgPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/slideshow_nobre" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
